@@ -670,7 +670,7 @@ services:
       - PRODUCTION=false
       - PROCESSES=4
       - THREADS=10
-    user: "1000:1000"
+    #user: "1000:1000"
     volumes:
       - ./conf/mapproxy_conf:/mapproxy
       - mapproxy_cache_data:/mapproxy/cache_data
@@ -704,7 +704,7 @@ services:
       - PRODUCTION=True
       - PROCESSES=30
       - THREADS=100
-    user: "1000:1000"
+    #user: "1000:1000"
     volumes:
       - ./conf/mapproxy_conf:/mapproxy
       - mapproxy_cache_data:/mapproxy/cache_data
