@@ -22,7 +22,7 @@ compose-diagram: ## Generate a diagram of the docker-compose.yml file
 	@echo ""
 	@echo "Generating diagram of docker architecture"
 	@echo ""
-	@docker run --rm -it --name dcv -v $(pwd):/input pmsipilot/docker-compose-viz render -m image docker-compose.yml
+	@docker container run --rm -it --name dcv -v `pwd`:/input pmsipilot/docker-compose-viz render -m image --force docker-compose.yml
 
 backup-everything: ## Sequentially run through all backup scripts
 	@make backup-hugo
