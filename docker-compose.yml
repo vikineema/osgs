@@ -210,7 +210,7 @@ services:
      - jupyter_data:/files/jupyter_data
      - geoserver_user_data:/files/geoserver_user_data
      # Mapproxy configs
-     - mapproxy_cache_data/:/files/mapproxy_cache
+     - mapproxy_cache_data:/files/mapproxy_cache
      - ./conf/mapproxy_conf/:/files/mapproxy_config
      # Node red data
      - node-red-data:/files/node_red_data
